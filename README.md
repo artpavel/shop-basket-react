@@ -1,4 +1,4 @@
-Иee how it works: https://shop-basket-react.netlify.app/
+See how it works: https://shop-basket-react.netlify.app/
 
 # Getting Started with Create React App
 
