@@ -1,14 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ShopContext } from '../reducer/context';
 
 const GoodsItem = props => {
-  const {
-    id,
-    name,
-    description,
-    price,
-    full_background,
-    addToBasket = Function.prototype,
-  } = props;
+  const { id, name, description, price, full_background } = props;
+
+  const { addToBasket } = useContext(ShopContext);
 
   return (
     <div className='card'>
