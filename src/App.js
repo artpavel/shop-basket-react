@@ -1,15 +1,18 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Shop from './components/Shop';
+import { ContextProvider } from './reducer/context';
 
-function App() {
+const App = () => {
   return (
     <>
       <Header />
-      <Shop />
+      <ContextProvider>
+        <Shop />
+      </ContextProvider>
       <Footer />
     </>
   );
-}
+};
 
 export default App;
